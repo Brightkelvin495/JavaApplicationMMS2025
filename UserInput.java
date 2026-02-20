@@ -14,10 +14,19 @@ public class UserInput{
 		int age = scan.nextInt();
 		scan.nextLine();
 		
+		System.out.print("Enter your gender(M/F: ");
+		String gender = scan.next();
+		
+		System.out.printf("Are you happy to learn Java ?(true/False: ");
+		boolean isHappy = scan.nextBoolean();
+	
+		
 	
 	    System.out.printf("Hello %s ,How are you today?%n",fullName);
 		System.out.printf("Nice meeting you, you are living in %s%n",address);
 		System.out.printf("%s, you are %d years old",fullName,age);
+		System.out.printf("You are a %c ",gender);
+		System.out.printf("Are you happy to learn Java? %b%n ",isHappy);
 		
 		
 	}
